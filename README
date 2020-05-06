@@ -1,3 +1,37 @@
 This is a small program to convert between binary, decimal, and hexadecimal.
 
 It also prints the ascii table in 2 formats.
+
+$ radix -A
+
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+	
+ 2        !  "  #  $  %  &  '  (  )  *  +  ,  -  .  /
+ 3     0  1  2  3  4  5  6  7  8  9  :  ;  <  =  >  ?
+ 4     @  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O
+ 5     P  Q  R  S  T  U  V  W  X  Y  Z  [  \  ]  ^  _
+ 6     `  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o
+ 7     p  q  r  s  t  u  v  w  x  y  z  {  |  }
+
+$ radix -a
+
+       0  1  2  3  4  5  6  7  8  9
+	
+ 3            !  "  #  $  %  &  '
+ 4     (  )  *  +  ,  -  .  /  0  1
+ 5     2  3  4  5  6  7  8  9  :  ;
+ 6     <  =  >  ?  @  A  B  C  D  E
+ 7     F  G  H  I  J  K  L  M  N  O
+ 8     P  Q  R  S  T  U  V  W  X  Y
+ 9     Z  [  \  ]  ^  _  `  a  b  c
+10     d  e  f  g  h  i  j  k  l  m
+11     n  o  p  q  r  s  t  u  v  w
+12     x  y  z  {  |  }
+
+Typing any of:
+$ radix -b 1101
+$ radix -o 15
+$ radix 13
+$ radix -x d
+         Binary          Octal        Decimal            Hex
+     0b00001101            015             13            0xd
